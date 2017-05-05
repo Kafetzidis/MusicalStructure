@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicalstructure.AlbumsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/playlists_id"
+        android:textColor="@color/primary_text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/playlist1"
+        android:textColor="@color/icons" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/playlist2"
+        android:textColor="@color/icons" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/playlist3"
+        android:textColor="@color/icons" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/playlist4"
+        android:textColor="@color/icons" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/playlist5"
+        android:textColor="@color/icons" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/albums"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/albumbutton"
+            android:src="@drawable/ic_album"
+            android:tint="@color/icons" />
+
+        <ImageButton
+            android:id="@+id/songs"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/songbutton"
+            android:src="@drawable/ic_favorite"
+            android:tint="@color/icons" />
+
+        <ImageButton
+            android:id="@+id/artists"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/artistbutton"
+            android:src="@drawable/ic_perm_identity"
+            android:tint="@color/icons" />
+
+        <ImageButton
+            android:id="@+id/playlists"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/playlistbutton"
+            android:src="@drawable/ic_queue_music"
+            android:tint="@color/colorAccent" />
+
+        <ImageButton
+            android:id="@+id/now_playing"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/nowplayingbutton"
+            android:src="@drawable/ic_play_arrow"
+            android:tint="@color/icons" />
+
+
+    </LinearLayout>
+</LinearLayout>

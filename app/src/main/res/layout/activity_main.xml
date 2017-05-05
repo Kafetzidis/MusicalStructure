@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicalstructure.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/albums"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_margin="24dp"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/albumbutton"
+            android:src="@drawable/ic_album"
+            android:tint="@color/icons" />
+
+        <ImageButton
+            android:id="@+id/songs"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_margin="24dp"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/songbutton"
+            android:src="@drawable/ic_favorite"
+            android:tint="@color/icons" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:gravity="center_horizontal"
+            android:text="@string/albums"
+            android:textColor="@color/primary_text" />
+
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:gravity="center_horizontal"
+            android:text="@string/songs"
+            android:textColor="@color/primary_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/artists"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_margin="24dp"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/artistbutton"
+            android:src="@drawable/ic_perm_identity"
+            android:tint="@color/icons" />
+
+        <ImageButton
+            android:id="@+id/playlists"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_margin="24dp"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/playlistbutton"
+            android:src="@drawable/ic_queue_music"
+            android:tint="@color/icons" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:gravity="center_horizontal"
+            android:text="@string/artists"
+            android:textColor="@color/primary_text" />
+
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:gravity="center_horizontal"
+            android:text="@string/playlists"
+            android:textColor="@color/primary_text" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/now_playing"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="24dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/nowplayingbutton"
+        android:src="@drawable/ic_play_arrow"
+        android:tint="@color/icons" />
+
+    <TextView
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="@string/now_playing"
+        android:textColor="@color/primary_text" />
+
+</LinearLayout>

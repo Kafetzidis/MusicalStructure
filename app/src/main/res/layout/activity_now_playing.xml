@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicalstructure.AlbumsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/now_playing_id"
+        android:textColor="@color/primary_text" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/album1"
+        android:src="@drawable/medelski" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="@string/song_title"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/icons"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="@string/artist"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@color/icons" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/rewind"
+            android:src="@drawable/ic_fast_rewind" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/play"
+            android:src="@drawable/ic_play_arrow"
+            android:tint="@color/icons" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/fastforward"
+            android:src="@drawable/ic_fast_forward" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/albums"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/albumbutton"
+            android:src="@drawable/ic_album"
+            android:tint="@color/icons" />
+
+        <ImageButton
+            android:id="@+id/songs"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/songbutton"
+            android:src="@drawable/ic_favorite"
+            android:tint="@color/icons" />
+
+        <ImageButton
+            android:id="@+id/artists"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/artistbutton"
+            android:src="@drawable/ic_perm_identity"
+            android:tint="@color/icons" />
+
+        <ImageButton
+            android:id="@+id/playlists"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/playlistbutton"
+            android:src="@drawable/ic_queue_music"
+            android:tint="@color/icons" />
+
+        <ImageButton
+            android:id="@+id/now_playing"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/nowplayingbutton"
+            android:src="@drawable/ic_play_arrow"
+            android:tint="@color/colorAccent" />
+
+
+    </LinearLayout>
+</LinearLayout>
